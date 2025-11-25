@@ -20,12 +20,11 @@ export function Layout({ children }: LayoutProps) {
               Дзи'Маат
             </span>
           </Link>
-
           <ul className="flex items-center gap-1 sm:gap-2 md:gap-8">
             <li>
               <Link
                 to="/"
-                className="text-sm md:text-base px-3 md:px-4 py-2 rounded-lg hover:text-neon-pink hover:bg-neon-pink/10 transition-all duration-300"
+                className="whitespace-nowrap text-sm sm:text-sm md:text-base px-1.5 sm:px-3 md:px-4 py-2 rounded-lg hover:text-neon-pink hover:bg-neon-pink/10 transition-all duration-300"
               >
                 Дім
               </Link>
@@ -33,7 +32,7 @@ export function Layout({ children }: LayoutProps) {
             <li>
               <Link
                 to="/rituals"
-                className="text-sm md:text-base px-3 md:px-4 py-2 rounded-lg hover:text-neon-pink hover:bg-neon-pink/10 transition-all duration-300"
+                className="whitespace-nowrap text-sm sm:text-sm md:text-base px-1.5 sm:px-3 md:px-4 py-2 rounded-lg hover:text-neon-pink hover:bg-neon-pink/10 transition-all duration-300"
               >
                 Ритуали
               </Link>
@@ -41,7 +40,7 @@ export function Layout({ children }: LayoutProps) {
             <li>
               <Link
                 to="/elders"
-                className="text-sm md:text-base px-3 md:px-4 py-2 rounded-lg hover:text-neon-pink hover:bg-neon-pink/10 transition-all duration-300"
+                className="whitespace-nowrap text-sm sm:text-sm md:text-base px-1.5 sm:px-3 md:px-4 py-2 rounded-lg hover:text-neon-pink hover:bg-neon-pink/10 transition-all duration-300"
               >
                 Клани
               </Link>
@@ -49,7 +48,7 @@ export function Layout({ children }: LayoutProps) {
             <li>
               <Link
                 to="/sanctuary"
-                className="text-sm md:text-base px-3 md:px-4 py-2 rounded-lg hover:text-neon-pink hover:bg-neon-pink/10 transition-all duration-300"
+                className="whitespace-nowrap text-sm sm:text-sm md:text-base px-1.5 sm:px-3 md:px-4 py-2 rounded-lg hover:text-neon-pink hover:bg-neon-pink/10 transition-all duration-300"
               >
                 Святилище
               </Link>
