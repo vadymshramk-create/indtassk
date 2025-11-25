@@ -1,0 +1,220 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+   */
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 320 100% 50%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 25%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 320 100% 50%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 320 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 8%;
+
+    --sidebar-foreground: 0 0% 90%;
+
+    --sidebar-primary: 320 100% 50%;
+
+    --sidebar-primary-foreground: 0 0% 10%;
+
+    --sidebar-accent: 0 0% 20%;
+
+    --sidebar-accent-foreground: 320 100% 50%;
+
+    --sidebar-border: 0 0% 18%;
+
+    --sidebar-ring: 320 100% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 320 100% 50%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 25%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 320 100% 50%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 320 100% 50%;
+
+    --sidebar-background: 0 0% 8%;
+
+    --sidebar-foreground: 0 0% 90%;
+
+    --sidebar-primary: 320 100% 50%;
+
+    --sidebar-primary-foreground: 0 0% 10%;
+
+    --sidebar-accent: 0 0% 20%;
+
+    --sidebar-accent-foreground: 320 100% 50%;
+
+    --sidebar-border: 0 0% 18%;
+
+    --sidebar-ring: 320 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply bg-[#0a0a0a];
+  }
+
+  body {
+    @apply bg-[#0a0a0a] text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Cinzel", serif;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+}
+
+@layer components {
+  .neon-glow {
+    @apply text-neon-pink shadow-lg;
+    text-shadow: 0 0 10px #fc0fc0, 0 0 20px #fc0fc0;
+  }
+
+  .neon-border {
+    @apply border border-neon-pink;
+    box-shadow: 0 0 10px rgba(252, 15, 192, 0.5);
+  }
+
+  .glow-text {
+    @apply text-neon-pink animate-glow;
+  }
+
+  .card-mystical {
+    @apply bg-dark-card border border-neon-pink/30 rounded-lg p-6;
+    transition: all 0.3s ease;
+  }
+
+  .card-mystical:hover {
+    @apply border-neon-pink shadow-lg;
+    box-shadow: 0 0 20px rgba(252, 15, 192, 0.4);
+  }
+
+  .btn-neon {
+    @apply bg-neon-pink text-black font-semibold px-6 py-3 rounded-lg;
+    transition: all 0.3s ease;
+    text-shadow: none;
+  }
+
+  .btn-neon:hover {
+    @apply shadow-lg;
+    box-shadow: 0 0 30px rgba(252, 15, 192, 0.8);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline-neon {
+    @apply border border-neon-pink text-neon-pink px-6 py-3 rounded-lg font-semibold bg-transparent;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-neon:hover {
+    @apply bg-neon-pink text-black;
+    box-shadow: 0 0 20px rgba(252, 15, 192, 0.6);
+  }
+}
+
+/* Mystical background effects */
+.mystical-bg {
+  background: linear-gradient(
+    135deg,
+    #0a0a0a 0%,
+    #1a0a2e 50%,
+    #0a0a0a 100%
+  );
+}
+
+.mystical-dark {
+  background: #0a0a0a;
+  position: relative;
+}
+
+.mystical-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 20% 50%,
+    rgba(252, 15, 192, 0.05) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
