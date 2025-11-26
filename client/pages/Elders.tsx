@@ -162,7 +162,7 @@ export default function Elders() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-dark-card border border-neon-pink/20 rounded-lg p-8">
               <h2 className="text-3xl font-['Cinzel'] text-neon-pink mb-6">
-                Ієрархія Королевства
+                Ієрархія Королівства
               </h2>
 
               <div className="space-y-6">
