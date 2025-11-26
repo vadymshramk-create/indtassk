@@ -205,7 +205,7 @@ export default function Home() {
       <section className="py-20 sm:py-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a0a2e]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-['Cinzel'] text-center mb-12 text-white">
-            Досліджуйте Королевство
+            Досліджуйте Королівство
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -241,7 +241,7 @@ export default function Home() {
                   Клани та Старійшини
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  Познайомтесь з древніми родинами королевства
+                  Познайомтесь з давніми родинами королівства
                 </p>
                 <div className="text-neon-pink font-semibold flex items-center justify-center gap-2 group-hover:gap-4 transition-all">
                   Дізнатися більше <ArrowRight size={20} />

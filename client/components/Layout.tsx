@@ -121,7 +121,7 @@ export function Layout({ children }: LayoutProps) {
 
           <div className="border-t border-neon-pink/20 pt-8 text-center text-sm text-gray-500">
             <p>
-              © {new Date().getFullYear()} Королевство Темних Ельфів. Всі права
+              © {new Date().getFullYear()} Королівство Темних Ельфів. Всі права
               захищені.
             </p>
           </div>
